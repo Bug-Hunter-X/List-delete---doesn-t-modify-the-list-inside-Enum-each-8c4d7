@@ -1,0 +1,1 @@
+This example demonstrates a common misunderstanding in Elixir regarding immutability and side effects.  The `List.delete/2` function returns a *new* list with the element removed, it doesn't modify the original list in place.  Since `Enum.each` doesn't assign the new list back to the `list` variable, the changes are not reflected in the final output.
